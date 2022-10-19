@@ -1,0 +1,55 @@
+.student-container {
+  min-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: dotted;
+  margin-bottom: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.student-container p {
+  align-self: center;
+  max-width: 150px;
+  min-width: 100px;
+  flex-wrap: wrap;
+}
+
+.crud-button {
+  border-style: none;
+  border-radius: 100px;
+  height: 35px;
+  padding: 0 10px 0;
+  color: black;
+}
+
+.edit-button {
+  background-color: rgb(230, 192, 42);
+}
+
+
+.crud-button:hover {
+  background-color: rgb(61, 61, 61);
+  color: white;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: rgb(185, 36, 36);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}

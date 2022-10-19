@@ -1,0 +1,12 @@
+
+Backlog 
+
+Design 1-> hour
+
+Model -> 2 hours
+
+Front-end -> 8 hours
+
+Test -> 3 hours
+
+

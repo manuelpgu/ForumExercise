@@ -34,6 +34,10 @@ function ForumApp() {
             
           </div>
         }) : "Loading data"}</div>
+
+          <Link to={`/posts/new`}>
+            Add New Post
+          </Link>
        
       </div>
     </div>

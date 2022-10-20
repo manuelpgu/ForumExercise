@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 
 
 const CategoryBySelectedThread = () => {
@@ -35,7 +36,14 @@ const CategoryBySelectedThread = () => {
           <h5>{post.imageLink}</h5>
         </div>
       }) : "Loading data"}</div>
+
+          <Link to={`/forumApp`}>
+            Go Back To threads
+          </Link>
       </div>
+
+     
+
     </div>
 );
 

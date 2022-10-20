@@ -1,4 +1,46 @@
-.student-container {
+.formAdd {
+  background-color: antiquewhite;
+  height: 800px;
+}
+
+.forumTheadsAll {
+  background-color: antiquewhite;
+  height: 800px;
+}
+
+.categoriesSelected {
+  background-color: antiquewhite;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 600px;
+}
+
+.forumTheadsContainer{
+  width: 50%;
+  margin: auto;
+}
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  align-self: center;
+}
+
+.update-form div {
+  margin: 3px 0;
+}
+
+.update-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
   min-height: 30px;
   display: flex;
   justify-content: space-between;
@@ -11,7 +53,7 @@
   flex-wrap: wrap;
 }
 
-.student-container p {
+.main-container p {
   align-self: center;
   max-width: 150px;
   min-width: 100px;

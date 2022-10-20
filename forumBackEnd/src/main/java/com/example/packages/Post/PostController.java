@@ -19,8 +19,21 @@ public class PostController {
         forbiddenWords.addAll(List.of("Mierda", "Culo","Pedo","Asesinato"));
     }
     @GetMapping
-    public List<Post> getPosts() {
-        return postService.getPosts();
+    public List<Post> getPostsWithDifferentTheads() {
+        /*TODO @manuelpgu modificar */
+        ArrayList<String> theads = new ArrayList<String>();
+        List<Post> postsWithDifferentTheads = new ArrayList<Post>();
+        List<Post> posts = postService.getPosts();
+
+        posts.forEach(post -> {
+            if (!theads.contains(post.getThread())){
+                postsWithDifferentTheads.add(post);
+                theads.add(post.getThread());
+            }
+        });
+
+        return postsWithDifferentTheads;
+        //return postService.getPosts();
     }
 
     @PostMapping

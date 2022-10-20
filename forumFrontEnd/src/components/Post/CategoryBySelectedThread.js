@@ -22,6 +22,7 @@ const CategoryBySelectedThread = () => {
 
   return (
     <div className="main-container">
+      <div className="categoriesSelected">
       <header><h2>Post theads</h2><hr></hr></header>
       <h3>Select a theads</h3>
       <div>{posts ?
@@ -34,7 +35,7 @@ const CategoryBySelectedThread = () => {
           <h5>{post.imageLink}</h5>
         </div>
       }) : "Loading data"}</div>
-     
+      </div>
     </div>
 );
 

@@ -19,19 +19,24 @@ function ForumApp() {
 
 
   return (
-      <div className="main-container">
+    <div className='forumTheadsAll'>
+      <div className='forumTheadsContainer'>
         <header><h2>Post theads</h2><hr></hr></header>
         <h3>Select a theads</h3>
         <div>{theads ?
         theads
         .map((thead) => {
           return <div key={thead.id}>
-            <h5> {thead.thread} <Link className="crud-button edit-button" to={`/selectedThead/${thead.thread}`} value={thead.thread}><i className="fa-solid fa-pencil"></i></Link></h5>
+            <h5> {thead.thread} </h5>
+            <Link className="crud-button edit-button" to={`/selectedThead/${thead.thread}`} value={thead.thread}><i className="fa-solid fa-pencil"></i>
+            
+            </Link>
             
           </div>
         }) : "Loading data"}</div>
        
       </div>
+    </div>
   );
 }
 

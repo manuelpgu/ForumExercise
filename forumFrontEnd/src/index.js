@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+import reportWebVitals from './reportWebVitals';
+//USEPARAMS BUSCAR EN GOOGLE
 
 import {
   createBrowserRouter,
@@ -12,6 +13,11 @@ import {
 import "./index.css";
 import EditStudentForm from './components/Student/EditStudentForm';
 import CreateStudentForm from './components/Student/CreateStudentForm';
+import ForumApp from './components/Student/ForumApp';
+import Profile from './components/Student/Profile';
+import CategoryBySelectedThread from './components/Student/CategoryBySelectedThread';
+import CreatePostForm from './components/Student/CreatePostForm';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -20,10 +26,33 @@ const router = createBrowserRouter([
     path: "/",
     element: <App/>,
   },
+
+  {
+    path: "/forumApp",
+    element: <ForumApp/>,
+  },
+
+  {
+    path: "/posts/new",
+    element: <CreatePostForm />
+  },
+
+  {
+    path: "/profile",
+    element: <Profile/>,
+  },
+
   {
     path: "/students/:id",
     element: <EditStudentForm />
   },
+
+  {
+    path: "/selectedThead/:thead",
+    element: <CategoryBySelectedThread/>
+  },
+
+
   {
     path: "/students",
     element: <EditStudentForm />

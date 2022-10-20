@@ -14,7 +14,7 @@ function App() {
   
   const navigate = useNavigate();
   const currentLocation = useLocation()
-  const apiDomain = "http://localhost:8081/api/v1"
+  const apiDomain = "http://localhost:8080/api/v1"
 
   const handleClickOpen = (event) => {
     if (event.target.value) {
@@ -68,7 +68,7 @@ function App() {
             ></Student>
           </div>
         }) : "Loading data"}</div>
-        <button className="add-student-btn" name="add-student" onClick={openAddStudentDialog}>Add student</button>
+        <button className="add-student-btn" name="add-student" onClick={openAddStudentDialog}>Add studenteee</button>
         <Dialog open={openDeleteDialog}
           onClose={handleClose}>
           <DialogTitle id="alert-dialog-title">

@@ -8,7 +8,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
 const CreateStudentForm = () => {
   const navigate = useNavigate();
-  const apiDomain = "http://localhost:8081/api/v1";
+  const apiDomain = "http://localhost:8080/api/v1";
   const [dob, setDob] = useState(new Date());
   const createStudent = (event) => {
     event.preventDefault();

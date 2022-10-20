@@ -9,7 +9,7 @@ const EditStudentForm = () => {
   useEffect(() => {
     const id = window.location.pathname[window.location.pathname.length-1]
     if (!student) {
-      fetch('http://localhost:8081/api/v1/students/'+id).then((response) => {
+      fetch('http://localhost:8080/api/v1/students/'+id).then((response) => {
         return response.json();
       }).then((data) => {
         setStudent(data)
@@ -26,7 +26,7 @@ const EditStudentForm = () => {
       "dob": event.target[2].value,
       "age": event.target[3].value
     }
-    const result = await axios.put('http://localhost:8081/api/v1/students/'+student.id, body)
+    const result = await axios.put('http://localhost:8080/api/v1/students/'+student.id, body)
   
     if (result.status === 200) {
       window.location = '/';

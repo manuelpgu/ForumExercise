@@ -15,6 +15,8 @@ public class Post {
 
     private String thread;
 
+    private String title;
+
 
     private String postBody;
 
@@ -26,6 +28,14 @@ public class Post {
     public Post(String userName, String thread, String postBody, String imageLink) {
         this.userName = userName;
         this.thread = thread;
+        this.postBody = postBody;
+        this.imageLink = imageLink;
+    }
+
+    public Post(String userName, String thread, String title, String postBody, String imageLink) {
+        this.userName = userName;
+        this.thread = thread;
+        this.title = title;
         this.postBody = postBody;
         this.imageLink = imageLink;
     }
@@ -52,6 +62,14 @@ public class Post {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getThread() {

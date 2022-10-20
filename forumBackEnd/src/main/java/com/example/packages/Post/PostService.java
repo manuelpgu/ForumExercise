@@ -18,8 +18,22 @@ public class PostService {
 
     public List<Post> getPosts(){
 
-        return  postRepository.findByUserName("juanfran");
-       // return postRepository.findAll();
+        return  postRepository.findAll();
+    }
+
+    public void  addNewPost(Post post){
+        postRepository.save(post);
+    }
+
+    //para probar el post
+    public List<Post> getPostsByUsername(String username){
+
+        return  postRepository.findByUserName(username);
+    }
+
+    public List<Post> findByThread(String thread){
+
+        return  postRepository.findByThread(thread);
     }
 
     public void savePosts(List<Post> posts){

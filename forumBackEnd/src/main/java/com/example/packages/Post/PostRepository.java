@@ -11,4 +11,6 @@ import java.util.Optional;
 public interface PostRepository extends JpaRepository<Post, Long> {
    //
     List<Post> findByUserName(String username);
+
+    List<Post> findByThread(String thread);
 }

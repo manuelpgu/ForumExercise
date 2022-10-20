@@ -26,13 +26,70 @@ function ForumApp() {
         <div>{theads ?
         theads
         .map((thead) => {
-          return <div key={thead.id}>
+
+          if(thead.thread =='doubt'){
+            return <div key={thead.id}>
             <h5> {thead.thread} </h5>
+           
             <Link className="crud-button edit-button" to={`/selectedThead/${thead.thread}`} value={thead.thread}><i className="fa-solid fa-pencil"></i>
             
             </Link>
             
           </div>
+
+          }
+
+          if(thead.thread =='doubt'){
+            return <div key={thead.id}>
+            <h5> {thead.thread} </h5>
+           
+            <Link className="crud-button edit-button" to={`/selectedThead/${thead.thread}`} value={thead.thread}><i className="fa-solid l"></i>
+            ❓
+            </Link>
+            
+          </div>
+
+          }
+
+          else if(thead.thread =='clarification'){
+            return <div key={thead.id}>
+            <h5> {thead.thread} </h5>
+           
+            <Link className="crud-button edit-button" to={`/selectedThead/${thead.thread}`} value={thead.thread}><i className="fa-solid l"></i>
+            ✏
+            </Link>
+            
+          </div>
+
+          }
+
+          else if(thead.thread =='suggestion'){
+            return <div key={thead.id}>
+            <h5> {thead.thread} </h5>
+           
+            <Link className="crud-button edit-button" to={`/selectedThead/${thead.thread}`} value={thead.thread}><i className="fa-solid l"></i>
+            🔊
+            </Link>
+            
+          </div>
+
+          }
+
+          else {
+            return <div key={thead.id}>
+            <h5> {thead.thread} </h5>
+           
+            <Link className="crud-button edit-button" to={`/selectedThead/${thead.thread}`} value={thead.thread}><i className="fa-solid l"></i>
+            
+            </Link>
+            
+          </div>
+
+
+          }
+
+
+          
         }) : "Loading data"}</div>
 
           <Link to={`/posts/new`}>

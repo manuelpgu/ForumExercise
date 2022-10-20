@@ -12,7 +12,7 @@ public class PostConfig {
     @Bean
     CommandLineRunner commandLineRunner(PostRepository repository) {
         return args -> {
-            Post post1 = new Post("pepe","category","enfado maximo","trial post","link");
+            Post post1 = new Post("pepe","doubt","enfado maximo","trial post","link");
 
             Post post2 = new Post("juanfran","suggestion","muy contento", "post 2","link2");
 

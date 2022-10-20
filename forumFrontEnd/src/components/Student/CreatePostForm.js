@@ -2,14 +2,10 @@ import axios from "axios"
 import { TextField, Button } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
 const CreatePostForm = () => {
   const navigate = useNavigate();
   const apiDomain = "http://localhost:8080/api/v1";
-  const [dob, setDob] = useState(new Date());
   const createPost = (event) => {
     event.preventDefault();
     const body = {

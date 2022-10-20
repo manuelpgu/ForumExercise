@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { TextField, Button } from "@mui/material";
-import "./EditStudentForm.css";
-import axios from "axios";
+
 
 const CategoryBySelectedThread = () => {
   const [posts, setPosts] = useState(null)

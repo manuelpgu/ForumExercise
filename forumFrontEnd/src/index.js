@@ -10,9 +10,9 @@ import {
   RouterProvider
 } from "react-router-dom";
 import "./index.css";
-import ForumApp from './components/Student/ForumApp';
-import CategoryBySelectedThread from './components/Student/CategoryBySelectedThread';
-import CreatePostForm from './components/Student/CreatePostForm';
+import ForumApp from './components/Post/ForumApp';
+import CategoryBySelectedThread from './components/Post/CategoryBySelectedThread';
+import CreatePostForm from './components/Post/CreatePostForm';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
